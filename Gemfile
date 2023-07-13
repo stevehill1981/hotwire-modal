@@ -68,6 +68,9 @@ group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   gem "spring"
 
+  gem "database_consistency", require: false
+  gem "strong_migrations"
+
   gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
 end
 
