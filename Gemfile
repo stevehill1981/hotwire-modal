@@ -70,6 +70,7 @@ group :development do
 end
 
 group :test do
+  gem "brakeman"
   gem "capybara"
   gem "capybara-screenshot"
   gem "selenium-webdriver"
