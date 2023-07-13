@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
   def current_user
-    nil
+    Struct.new(:id)
   end
 end
