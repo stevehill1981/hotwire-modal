@@ -73,4 +73,5 @@ group :test do
   gem "capybara"
   gem "capybara-screenshot"
   gem "selenium-webdriver"
+  gem "simplecov", require: false
 end
