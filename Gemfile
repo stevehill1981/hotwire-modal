@@ -71,6 +71,7 @@ end
 
 group :test do
   gem "brakeman"
+  gem "bundler-audit"
   gem "capybara"
   gem "capybara-screenshot"
   gem "selenium-webdriver"
