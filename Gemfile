@@ -52,6 +52,8 @@ gem "lograge"
 gem "flipper"
 gem "flipper-active_record"
 
+gem "devise"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[mri windows]
@@ -59,6 +61,8 @@ group :development, :test do
   gem "rspec-rails", "~> 6.0.0"
   gem "standard"
   gem "standard-rails"
+
+  gem "strong_migrations"
 end
 
 group :development do
@@ -69,10 +73,9 @@ group :development do
   gem "rack-mini-profiler"
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
-  gem "spring"
+  # gem "spring"
 
   gem "database_consistency", require: false
-  gem "strong_migrations"
 
   gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
 end

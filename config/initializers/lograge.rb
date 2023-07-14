@@ -9,7 +9,7 @@ Rails.application.configure do
       request_id: controller.request.request_id
     }
 
-    if controller.try(:current_user, :present?)
+    if controller.user_signed_in?
       metadata[:user_id] = controller.current_user.id
     end
 
